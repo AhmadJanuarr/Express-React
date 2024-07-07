@@ -8,7 +8,7 @@ const validateUser = [
     .withMessage("Email is required")
     .isEmail()
     .withMessage("Email is invalid")
-    .costum(async (value, { req }) => {
+    .custom(async (value, { req }) => {
       if (!value) {
         throw new Error("Email is required");
       }
@@ -22,3 +22,5 @@ const validateUser = [
     .isLength({ min: 6 })
     .withMessage("Password must be at least 6 characters"),
 ];
+
+module.exports = { validateUser };
