@@ -5,7 +5,7 @@
 - Back end with ExpressJS
 
 ### Libraries and Tools
-- Prisma
+- Prisma (Object Relational Mapping)
 - JSON Web Token (JWT)
 
 ### Feature 
